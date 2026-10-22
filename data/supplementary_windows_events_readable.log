@@ -1,0 +1,4425 @@
+Windows Security Event Log - Training Dataset
+300 realistic-looking Windows Security log entries for SIEM/Elastic practice
+====================================================================================================
+
+Event 1
+TimeCreated: 2026-08-26 08:30:41
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4634
+Level: Information
+Computer: WS-HR01.corp.local
+An account was logged off.
+    Account Name: svc_backup, Account Domain: CORP
+    Logon Type: 2
+    Client Address: 10.10.20.22
+----------------------------------------------------------------------------------------------------
+
+Event 2
+TimeCreated: 2026-08-26 08:32:01
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4688
+Level: Information
+Computer: WS-FIN02.corp.local
+A new process has been created.
+    Subject User: bob / CORP
+    New Process Name: C:\Windows\System32\svchost.exe
+    Parent Process Name: C:\Windows\System32\services.exe
+    Command Line: C:\Windows\System32\svchost.exe
+----------------------------------------------------------------------------------------------------
+
+Event 3
+TimeCreated: 2026-08-26 08:33:08
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: WS-FIN02.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: WS-FIN02$
+    Logon Type: 2
+    New Logon: Account Name: svc_backup, Account Domain: CORP
+    Authentication Package: Kerberos
+    Workstation Name: WS-FIN02
+    Source Network Address: 10.10.20.15
+----------------------------------------------------------------------------------------------------
+
+Event 4
+TimeCreated: 2026-08-26 08:33:57
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: WS-IT03.corp.local
+An account failed to log on.
+    Account Name: alice, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 3
+    Authentication Package: NTLM
+    Workstation Name: WS-IT03
+    Source Network Address: 10.10.30.20
+----------------------------------------------------------------------------------------------------
+
+Event 5
+TimeCreated: 2026-08-26 08:35:35
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4634
+Level: Information
+Computer: WS-HR01.corp.local
+An account was logged off.
+    Account Name: alice, Account Domain: CORP
+    Logon Type: 2
+    Client Address: 10.10.20.22
+----------------------------------------------------------------------------------------------------
+
+Event 6
+TimeCreated: 2026-08-26 08:37:18
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4688
+Level: Information
+Computer: APP01.corp.local
+A new process has been created.
+    Subject User: alice / CORP
+    New Process Name: C:\Windows\System32\svchost.exe
+    Parent Process Name: C:\Windows\System32\services.exe
+    Command Line: C:\Windows\System32\svchost.exe
+----------------------------------------------------------------------------------------------------
+
+Event 7
+TimeCreated: 2026-08-26 08:37:53
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4634
+Level: Information
+Computer: DC01.corp.local
+An account was logged off.
+    Account Name: svc_backup, Account Domain: CORP
+    Logon Type: 3
+    Client Address: 10.10.20.16
+----------------------------------------------------------------------------------------------------
+
+Event 8
+TimeCreated: 2026-08-26 08:39:04
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4688
+Level: Information
+Computer: WS-HR01.corp.local
+A new process has been created.
+    Subject User: bob / CORP
+    New Process Name: C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE
+    Parent Process Name: C:\Windows\System32\services.exe
+    Command Line: C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE
+----------------------------------------------------------------------------------------------------
+
+Event 9
+TimeCreated: 2026-08-26 08:39:54
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4688
+Level: Information
+Computer: DC01.corp.local
+A new process has been created.
+    Subject User: bob / CORP
+    New Process Name: C:\Windows\System32\svchost.exe
+    Parent Process Name: C:\Windows\System32\services.exe
+    Command Line: C:\Windows\System32\svchost.exe
+----------------------------------------------------------------------------------------------------
+
+Event 10
+TimeCreated: 2026-08-26 08:40:29
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: WS-FIN02.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: WS-FIN02$
+    Logon Type: 2
+    New Logon: Account Name: svc_backup, Account Domain: CORP
+    Authentication Package: Kerberos
+    Workstation Name: WS-FIN02
+    Source Network Address: 10.10.30.20
+----------------------------------------------------------------------------------------------------
+
+Event 11
+TimeCreated: 2026-08-26 08:41:57
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: WS-HR01.corp.local
+An account failed to log on.
+    Account Name: charlie, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 3
+    Authentication Package: NTLM
+    Workstation Name: WS-HR01
+    Source Network Address: 10.10.20.22
+----------------------------------------------------------------------------------------------------
+
+Event 12
+TimeCreated: 2026-08-26 08:42:57
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: WS-HR01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: WS-HR01$
+    Logon Type: 2
+    New Logon: Account Name: svc_backup, Account Domain: CORP
+    Authentication Package: Kerberos
+    Workstation Name: WS-HR01
+    Source Network Address: 10.10.20.22
+----------------------------------------------------------------------------------------------------
+
+Event 13
+TimeCreated: 2026-08-26 08:43:37
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4634
+Level: Information
+Computer: WS-IT03.corp.local
+An account was logged off.
+    Account Name: svc_backup, Account Domain: CORP
+    Logon Type: 2
+    Client Address: 10.10.20.15
+----------------------------------------------------------------------------------------------------
+
+Event 14
+TimeCreated: 2026-08-26 08:45:10
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: WS-FIN02.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: WS-FIN02$
+    Logon Type: 2
+    New Logon: Account Name: charlie, Account Domain: CORP
+    Authentication Package: Kerberos
+    Workstation Name: WS-FIN02
+    Source Network Address: 10.10.20.15
+----------------------------------------------------------------------------------------------------
+
+Event 15
+TimeCreated: 2026-08-26 08:46:50
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4688
+Level: Information
+Computer: APP01.corp.local
+A new process has been created.
+    Subject User: charlie / CORP
+    New Process Name: C:\Windows\System32\conhost.exe
+    Parent Process Name: C:\Windows\System32\services.exe
+    Command Line: C:\Windows\System32\conhost.exe
+----------------------------------------------------------------------------------------------------
+
+Event 16
+TimeCreated: 2026-08-26 08:47:41
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: DC01.corp.local
+An account failed to log on.
+    Account Name: bob, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 2
+    Authentication Package: NTLM
+    Workstation Name: DC01
+    Source Network Address: 10.10.20.15
+----------------------------------------------------------------------------------------------------
+
+Event 17
+TimeCreated: 2026-08-26 08:48:55
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4688
+Level: Information
+Computer: APP01.corp.local
+A new process has been created.
+    Subject User: bob / CORP
+    New Process Name: C:\Windows\explorer.exe
+    Parent Process Name: C:\Windows\System32\services.exe
+    Command Line: C:\Windows\explorer.exe
+----------------------------------------------------------------------------------------------------
+
+Event 18
+TimeCreated: 2026-08-26 08:50:07
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: svc_sql, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 3
+    Authentication Package: NTLM
+    Workstation Name: FILE01
+    Source Network Address: 10.10.20.15
+----------------------------------------------------------------------------------------------------
+
+Event 19
+TimeCreated: 2026-08-26 08:51:31
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: WS-HR01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: WS-HR01$
+    Logon Type: 2
+    New Logon: Account Name: bob, Account Domain: CORP
+    Authentication Package: Kerberos
+    Workstation Name: WS-HR01
+    Source Network Address: 10.10.20.16
+----------------------------------------------------------------------------------------------------
+
+Event 20
+TimeCreated: 2026-08-26 08:52:47
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4672
+Level: Information
+Computer: WS-HR01.corp.local
+Special privileges assigned to new logon.
+    Account Name: svc_backup, Account Domain: CORP
+    Privileges: SeSecurityPrivilege, SeBackupPrivilege, SeRestorePrivilege
+----------------------------------------------------------------------------------------------------
+
+Event 21
+TimeCreated: 2026-08-26 08:53:13
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: APP01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: APP01$
+    Logon Type: 2
+    New Logon: Account Name: charlie, Account Domain: CORP
+    Authentication Package: Kerberos
+    Workstation Name: APP01
+    Source Network Address: 10.10.20.15
+----------------------------------------------------------------------------------------------------
+
+Event 22
+TimeCreated: 2026-08-26 08:54:23
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: DC01.corp.local
+An account failed to log on.
+    Account Name: charlie, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 3
+    Authentication Package: NTLM
+    Workstation Name: DC01
+    Source Network Address: 10.10.20.16
+----------------------------------------------------------------------------------------------------
+
+Event 23
+TimeCreated: 2026-08-26 08:54:49
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: APP01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: APP01$
+    Logon Type: 2
+    New Logon: Account Name: bob, Account Domain: CORP
+    Authentication Package: Kerberos
+    Workstation Name: APP01
+    Source Network Address: 10.10.30.20
+----------------------------------------------------------------------------------------------------
+
+Event 24
+TimeCreated: 2026-08-26 08:55:55
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4634
+Level: Information
+Computer: FILE01.corp.local
+An account was logged off.
+    Account Name: charlie, Account Domain: CORP
+    Logon Type: 3
+    Client Address: 10.10.30.20
+----------------------------------------------------------------------------------------------------
+
+Event 25
+TimeCreated: 2026-08-26 08:56:54
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: FILE01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: FILE01$
+    Logon Type: 2
+    New Logon: Account Name: svc_sql, Account Domain: CORP
+    Authentication Package: Kerberos
+    Workstation Name: FILE01
+    Source Network Address: 10.10.20.22
+----------------------------------------------------------------------------------------------------
+
+Event 26
+TimeCreated: 2026-08-26 08:58:02
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: WS-IT03.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: WS-IT03$
+    Logon Type: 3
+    New Logon: Account Name: bob, Account Domain: CORP
+    Authentication Package: NTLM
+    Workstation Name: WS-IT03
+    Source Network Address: 10.10.20.15
+----------------------------------------------------------------------------------------------------
+
+Event 27
+TimeCreated: 2026-08-26 08:59:44
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: FILE01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: FILE01$
+    Logon Type: 3
+    New Logon: Account Name: svc_sql, Account Domain: CORP
+    Authentication Package: NTLM
+    Workstation Name: FILE01
+    Source Network Address: 10.10.30.20
+----------------------------------------------------------------------------------------------------
+
+Event 28
+TimeCreated: 2026-08-26 09:00:21
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: FILE01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: FILE01$
+    Logon Type: 2
+    New Logon: Account Name: bob, Account Domain: CORP
+    Authentication Package: Kerberos
+    Workstation Name: FILE01
+    Source Network Address: 10.10.20.15
+----------------------------------------------------------------------------------------------------
+
+Event 29
+TimeCreated: 2026-08-26 09:00:44
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: WS-IT03.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: WS-IT03$
+    Logon Type: 2
+    New Logon: Account Name: svc_backup, Account Domain: CORP
+    Authentication Package: Kerberos
+    Workstation Name: WS-IT03
+    Source Network Address: 10.10.20.16
+----------------------------------------------------------------------------------------------------
+
+Event 30
+TimeCreated: 2026-08-26 09:02:27
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4634
+Level: Information
+Computer: APP01.corp.local
+An account was logged off.
+    Account Name: bob, Account Domain: CORP
+    Logon Type: 3
+    Client Address: 10.10.20.22
+----------------------------------------------------------------------------------------------------
+
+Event 31
+TimeCreated: 2026-08-26 09:03:37
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: WS-HR01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: WS-HR01$
+    Logon Type: 3
+    New Logon: Account Name: bob, Account Domain: CORP
+    Authentication Package: NTLM
+    Workstation Name: WS-HR01
+    Source Network Address: 10.10.20.16
+----------------------------------------------------------------------------------------------------
+
+Event 32
+TimeCreated: 2026-08-26 09:04:22
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4688
+Level: Information
+Computer: WS-IT03.corp.local
+A new process has been created.
+    Subject User: svc_sql / CORP
+    New Process Name: C:\Windows\System32\svchost.exe
+    Parent Process Name: C:\Windows\System32\services.exe
+    Command Line: C:\Windows\System32\svchost.exe
+----------------------------------------------------------------------------------------------------
+
+Event 33
+TimeCreated: 2026-08-26 09:04:43
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: WS-HR01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: WS-HR01$
+    Logon Type: 2
+    New Logon: Account Name: svc_backup, Account Domain: CORP
+    Authentication Package: Kerberos
+    Workstation Name: WS-HR01
+    Source Network Address: 10.10.20.15
+----------------------------------------------------------------------------------------------------
+
+Event 34
+TimeCreated: 2026-08-26 09:05:32
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4688
+Level: Information
+Computer: APP01.corp.local
+A new process has been created.
+    Subject User: svc_sql / CORP
+    New Process Name: C:\Windows\explorer.exe
+    Parent Process Name: C:\Windows\System32\services.exe
+    Command Line: C:\Windows\explorer.exe
+----------------------------------------------------------------------------------------------------
+
+Event 35
+TimeCreated: 2026-08-26 09:06:41
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4688
+Level: Information
+Computer: FILE01.corp.local
+A new process has been created.
+    Subject User: charlie / CORP
+    New Process Name: C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE
+    Parent Process Name: C:\Windows\System32\services.exe
+    Command Line: C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE
+----------------------------------------------------------------------------------------------------
+
+Event 36
+TimeCreated: 2026-08-26 09:08:14
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4634
+Level: Information
+Computer: DC01.corp.local
+An account was logged off.
+    Account Name: svc_sql, Account Domain: CORP
+    Logon Type: 3
+    Client Address: 10.10.20.15
+----------------------------------------------------------------------------------------------------
+
+Event 37
+TimeCreated: 2026-08-26 09:09:40
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: APP01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: APP01$
+    Logon Type: 3
+    New Logon: Account Name: charlie, Account Domain: CORP
+    Authentication Package: NTLM
+    Workstation Name: APP01
+    Source Network Address: 10.10.20.16
+----------------------------------------------------------------------------------------------------
+
+Event 38
+TimeCreated: 2026-08-26 09:10:25
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4688
+Level: Information
+Computer: APP01.corp.local
+A new process has been created.
+    Subject User: alice / CORP
+    New Process Name: C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE
+    Parent Process Name: C:\Windows\System32\services.exe
+    Command Line: C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE
+----------------------------------------------------------------------------------------------------
+
+Event 39
+TimeCreated: 2026-08-26 09:10:58
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4634
+Level: Information
+Computer: DC01.corp.local
+An account was logged off.
+    Account Name: alice, Account Domain: CORP
+    Logon Type: 2
+    Client Address: 10.10.30.20
+----------------------------------------------------------------------------------------------------
+
+Event 40
+TimeCreated: 2026-08-26 09:12:45
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4634
+Level: Information
+Computer: WS-IT03.corp.local
+An account was logged off.
+    Account Name: svc_backup, Account Domain: CORP
+    Logon Type: 3
+    Client Address: 10.10.30.20
+----------------------------------------------------------------------------------------------------
+
+Event 41
+TimeCreated: 2026-08-26 09:13:56
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: DC01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: DC01$
+    Logon Type: 3
+    New Logon: Account Name: bob, Account Domain: CORP
+    Authentication Package: NTLM
+    Workstation Name: DC01
+    Source Network Address: 10.10.20.15
+----------------------------------------------------------------------------------------------------
+
+Event 42
+TimeCreated: 2026-08-26 09:14:21
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4688
+Level: Information
+Computer: FILE01.corp.local
+A new process has been created.
+    Subject User: charlie / CORP
+    New Process Name: C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE
+    Parent Process Name: C:\Windows\System32\services.exe
+    Command Line: C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE
+----------------------------------------------------------------------------------------------------
+
+Event 43
+TimeCreated: 2026-08-26 09:15:11
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4634
+Level: Information
+Computer: WS-HR01.corp.local
+An account was logged off.
+    Account Name: svc_backup, Account Domain: CORP
+    Logon Type: 2
+    Client Address: 10.10.20.22
+----------------------------------------------------------------------------------------------------
+
+Event 44
+TimeCreated: 2026-08-26 09:15:35
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: WS-HR01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: WS-HR01$
+    Logon Type: 2
+    New Logon: Account Name: bob, Account Domain: CORP
+    Authentication Package: Kerberos
+    Workstation Name: WS-HR01
+    Source Network Address: 10.10.30.20
+----------------------------------------------------------------------------------------------------
+
+Event 45
+TimeCreated: 2026-08-26 09:16:52
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: WS-IT03.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: WS-IT03$
+    Logon Type: 3
+    New Logon: Account Name: svc_sql, Account Domain: CORP
+    Authentication Package: NTLM
+    Workstation Name: WS-IT03
+    Source Network Address: 10.10.20.22
+----------------------------------------------------------------------------------------------------
+
+Event 46
+TimeCreated: 2026-08-26 09:18:01
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4672
+Level: Information
+Computer: APP01.corp.local
+Special privileges assigned to new logon.
+    Account Name: svc_sql, Account Domain: CORP
+    Privileges: SeSecurityPrivilege, SeBackupPrivilege, SeRestorePrivilege
+----------------------------------------------------------------------------------------------------
+
+Event 47
+TimeCreated: 2026-08-26 09:18:21
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: FILE01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: FILE01$
+    Logon Type: 3
+    New Logon: Account Name: charlie, Account Domain: CORP
+    Authentication Package: NTLM
+    Workstation Name: FILE01
+    Source Network Address: 10.10.20.16
+----------------------------------------------------------------------------------------------------
+
+Event 48
+TimeCreated: 2026-08-26 09:18:59
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: DC01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: DC01$
+    Logon Type: 3
+    New Logon: Account Name: svc_sql, Account Domain: CORP
+    Authentication Package: NTLM
+    Workstation Name: DC01
+    Source Network Address: 10.10.20.16
+----------------------------------------------------------------------------------------------------
+
+Event 49
+TimeCreated: 2026-08-26 09:20:38
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: WS-HR01.corp.local
+An account failed to log on.
+    Account Name: svc_backup, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 2
+    Authentication Package: NTLM
+    Workstation Name: WS-HR01
+    Source Network Address: 10.10.20.15
+----------------------------------------------------------------------------------------------------
+
+Event 50
+TimeCreated: 2026-08-26 09:22:28
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: WS-HR01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: WS-HR01$
+    Logon Type: 2
+    New Logon: Account Name: bob, Account Domain: CORP
+    Authentication Package: Kerberos
+    Workstation Name: WS-HR01
+    Source Network Address: 10.10.20.22
+----------------------------------------------------------------------------------------------------
+
+Event 51
+TimeCreated: 2026-08-26 09:23:21
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4634
+Level: Information
+Computer: DC01.corp.local
+An account was logged off.
+    Account Name: alice, Account Domain: CORP
+    Logon Type: 2
+    Client Address: 10.10.20.22
+----------------------------------------------------------------------------------------------------
+
+Event 52
+TimeCreated: 2026-08-26 09:25:08
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4634
+Level: Information
+Computer: WS-FIN02.corp.local
+An account was logged off.
+    Account Name: bob, Account Domain: CORP
+    Logon Type: 3
+    Client Address: 10.10.20.16
+----------------------------------------------------------------------------------------------------
+
+Event 53
+TimeCreated: 2026-08-26 09:26:16
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: FILE01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: FILE01$
+    Logon Type: 3
+    New Logon: Account Name: svc_backup, Account Domain: CORP
+    Authentication Package: NTLM
+    Workstation Name: FILE01
+    Source Network Address: 10.10.30.20
+----------------------------------------------------------------------------------------------------
+
+Event 54
+TimeCreated: 2026-08-26 09:27:54
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4688
+Level: Information
+Computer: WS-IT03.corp.local
+A new process has been created.
+    Subject User: charlie / CORP
+    New Process Name: C:\Windows\System32\conhost.exe
+    Parent Process Name: C:\Windows\System32\services.exe
+    Command Line: C:\Windows\System32\conhost.exe
+----------------------------------------------------------------------------------------------------
+
+Event 55
+TimeCreated: 2026-08-26 09:28:26
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: FILE01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: FILE01$
+    Logon Type: 3
+    New Logon: Account Name: bob, Account Domain: CORP
+    Authentication Package: NTLM
+    Workstation Name: FILE01
+    Source Network Address: 10.10.20.15
+----------------------------------------------------------------------------------------------------
+
+Event 56
+TimeCreated: 2026-08-26 09:28:48
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: DC01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: DC01$
+    Logon Type: 3
+    New Logon: Account Name: svc_sql, Account Domain: CORP
+    Authentication Package: NTLM
+    Workstation Name: DC01
+    Source Network Address: 10.10.20.15
+----------------------------------------------------------------------------------------------------
+
+Event 57
+TimeCreated: 2026-08-26 09:30:37
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: WS-HR01.corp.local
+An account failed to log on.
+    Account Name: bob, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 2
+    Authentication Package: NTLM
+    Workstation Name: WS-HR01
+    Source Network Address: 10.10.20.15
+----------------------------------------------------------------------------------------------------
+
+Event 58
+TimeCreated: 2026-08-26 09:31:09
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: APP01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: APP01$
+    Logon Type: 2
+    New Logon: Account Name: bob, Account Domain: CORP
+    Authentication Package: Kerberos
+    Workstation Name: APP01
+    Source Network Address: 10.10.30.20
+----------------------------------------------------------------------------------------------------
+
+Event 59
+TimeCreated: 2026-08-26 09:32:16
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4634
+Level: Information
+Computer: FILE01.corp.local
+An account was logged off.
+    Account Name: bob, Account Domain: CORP
+    Logon Type: 2
+    Client Address: 10.10.30.20
+----------------------------------------------------------------------------------------------------
+
+Event 60
+TimeCreated: 2026-08-26 09:33:15
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: svc_backup, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 2
+    Authentication Package: NTLM
+    Workstation Name: FILE01
+    Source Network Address: 10.10.30.20
+----------------------------------------------------------------------------------------------------
+
+Event 61
+TimeCreated: 2026-08-26 09:34:03
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: WS-FIN02.corp.local
+An account failed to log on.
+    Account Name: svc_sql, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 2
+    Authentication Package: NTLM
+    Workstation Name: WS-FIN02
+    Source Network Address: 10.10.30.20
+----------------------------------------------------------------------------------------------------
+
+Event 62
+TimeCreated: 2026-08-26 09:35:47
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: WS-FIN02.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: WS-FIN02$
+    Logon Type: 2
+    New Logon: Account Name: alice, Account Domain: CORP
+    Authentication Package: Kerberos
+    Workstation Name: WS-FIN02
+    Source Network Address: 10.10.20.15
+----------------------------------------------------------------------------------------------------
+
+Event 63
+TimeCreated: 2026-08-26 09:36:26
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4634
+Level: Information
+Computer: DC01.corp.local
+An account was logged off.
+    Account Name: svc_backup, Account Domain: CORP
+    Logon Type: 3
+    Client Address: 10.10.30.20
+----------------------------------------------------------------------------------------------------
+
+Event 64
+TimeCreated: 2026-08-26 09:37:05
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: APP01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: APP01$
+    Logon Type: 2
+    New Logon: Account Name: bob, Account Domain: CORP
+    Authentication Package: Kerberos
+    Workstation Name: APP01
+    Source Network Address: 10.10.20.22
+----------------------------------------------------------------------------------------------------
+
+Event 65
+TimeCreated: 2026-08-26 09:37:34
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4634
+Level: Information
+Computer: WS-IT03.corp.local
+An account was logged off.
+    Account Name: alice, Account Domain: CORP
+    Logon Type: 2
+    Client Address: 10.10.20.16
+----------------------------------------------------------------------------------------------------
+
+Event 66
+TimeCreated: 2026-08-26 09:38:40
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: APP01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: APP01$
+    Logon Type: 3
+    New Logon: Account Name: charlie, Account Domain: CORP
+    Authentication Package: NTLM
+    Workstation Name: APP01
+    Source Network Address: 10.10.20.15
+----------------------------------------------------------------------------------------------------
+
+Event 67
+TimeCreated: 2026-08-26 09:39:35
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: WS-IT03.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: WS-IT03$
+    Logon Type: 2
+    New Logon: Account Name: svc_backup, Account Domain: CORP
+    Authentication Package: Kerberos
+    Workstation Name: WS-IT03
+    Source Network Address: 10.10.20.16
+----------------------------------------------------------------------------------------------------
+
+Event 68
+TimeCreated: 2026-08-26 09:40:40
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: WS-FIN02.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: WS-FIN02$
+    Logon Type: 2
+    New Logon: Account Name: charlie, Account Domain: CORP
+    Authentication Package: Kerberos
+    Workstation Name: WS-FIN02
+    Source Network Address: 10.10.30.20
+----------------------------------------------------------------------------------------------------
+
+Event 69
+TimeCreated: 2026-08-26 09:42:07
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4672
+Level: Information
+Computer: WS-HR01.corp.local
+Special privileges assigned to new logon.
+    Account Name: alice, Account Domain: CORP
+    Privileges: SeSecurityPrivilege, SeBackupPrivilege, SeRestorePrivilege
+----------------------------------------------------------------------------------------------------
+
+Event 70
+TimeCreated: 2026-08-26 09:42:54
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4688
+Level: Information
+Computer: WS-FIN02.corp.local
+A new process has been created.
+    Subject User: alice / CORP
+    New Process Name: C:\Windows\explorer.exe
+    Parent Process Name: C:\Windows\System32\services.exe
+    Command Line: C:\Windows\explorer.exe
+----------------------------------------------------------------------------------------------------
+
+Event 71
+TimeCreated: 2026-08-26 09:43:16
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4634
+Level: Information
+Computer: WS-IT03.corp.local
+An account was logged off.
+    Account Name: charlie, Account Domain: CORP
+    Logon Type: 3
+    Client Address: 10.10.30.20
+----------------------------------------------------------------------------------------------------
+
+Event 72
+TimeCreated: 2026-08-26 09:43:38
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4688
+Level: Information
+Computer: APP01.corp.local
+A new process has been created.
+    Subject User: alice / CORP
+    New Process Name: C:\Windows\System32\svchost.exe
+    Parent Process Name: C:\Windows\System32\services.exe
+    Command Line: C:\Windows\System32\svchost.exe
+----------------------------------------------------------------------------------------------------
+
+Event 73
+TimeCreated: 2026-08-26 09:44:37
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: WS-HR01.corp.local
+An account failed to log on.
+    Account Name: bob, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 3
+    Authentication Package: NTLM
+    Workstation Name: WS-HR01
+    Source Network Address: 10.10.30.20
+----------------------------------------------------------------------------------------------------
+
+Event 74
+TimeCreated: 2026-08-26 09:44:58
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4688
+Level: Information
+Computer: APP01.corp.local
+A new process has been created.
+    Subject User: bob / CORP
+    New Process Name: C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE
+    Parent Process Name: C:\Windows\System32\services.exe
+    Command Line: C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE
+----------------------------------------------------------------------------------------------------
+
+Event 75
+TimeCreated: 2026-08-26 09:46:40
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: WS-IT03.corp.local
+An account failed to log on.
+    Account Name: bob, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 3
+    Authentication Package: NTLM
+    Workstation Name: WS-IT03
+    Source Network Address: 10.10.20.16
+----------------------------------------------------------------------------------------------------
+
+Event 76
+TimeCreated: 2026-08-26 09:47:26
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4688
+Level: Information
+Computer: FILE01.corp.local
+A new process has been created.
+    Subject User: svc_sql / CORP
+    New Process Name: C:\Windows\System32\conhost.exe
+    Parent Process Name: C:\Windows\System32\services.exe
+    Command Line: C:\Windows\System32\conhost.exe
+----------------------------------------------------------------------------------------------------
+
+Event 77
+TimeCreated: 2026-08-26 09:47:56
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: FILE01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: FILE01$
+    Logon Type: 3
+    New Logon: Account Name: svc_backup, Account Domain: CORP
+    Authentication Package: NTLM
+    Workstation Name: FILE01
+    Source Network Address: 10.10.20.16
+----------------------------------------------------------------------------------------------------
+
+Event 78
+TimeCreated: 2026-08-26 09:49:29
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: alice, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 2
+    Authentication Package: NTLM
+    Workstation Name: FILE01
+    Source Network Address: 10.10.30.20
+----------------------------------------------------------------------------------------------------
+
+Event 79
+TimeCreated: 2026-08-26 09:51:14
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: WS-IT03.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: WS-IT03$
+    Logon Type: 3
+    New Logon: Account Name: bob, Account Domain: CORP
+    Authentication Package: NTLM
+    Workstation Name: WS-IT03
+    Source Network Address: 10.10.20.15
+----------------------------------------------------------------------------------------------------
+
+Event 80
+TimeCreated: 2026-08-26 09:52:39
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: APP01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: APP01$
+    Logon Type: 3
+    New Logon: Account Name: alice, Account Domain: CORP
+    Authentication Package: NTLM
+    Workstation Name: APP01
+    Source Network Address: 10.10.20.16
+----------------------------------------------------------------------------------------------------
+
+Event 81
+TimeCreated: 2026-08-26 09:54:17
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4688
+Level: Information
+Computer: WS-IT03.corp.local
+A new process has been created.
+    Subject User: svc_backup / CORP
+    New Process Name: C:\Windows\explorer.exe
+    Parent Process Name: C:\Windows\System32\services.exe
+    Command Line: C:\Windows\explorer.exe
+----------------------------------------------------------------------------------------------------
+
+Event 82
+TimeCreated: 2026-08-26 09:55:09
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: FILE01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: FILE01$
+    Logon Type: 3
+    New Logon: Account Name: svc_backup, Account Domain: CORP
+    Authentication Package: NTLM
+    Workstation Name: FILE01
+    Source Network Address: 10.10.30.20
+----------------------------------------------------------------------------------------------------
+
+Event 83
+TimeCreated: 2026-08-26 09:56:02
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: DC01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: DC01$
+    Logon Type: 3
+    New Logon: Account Name: svc_sql, Account Domain: CORP
+    Authentication Package: NTLM
+    Workstation Name: DC01
+    Source Network Address: 10.10.30.20
+----------------------------------------------------------------------------------------------------
+
+Event 84
+TimeCreated: 2026-08-26 09:57:37
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4688
+Level: Information
+Computer: WS-HR01.corp.local
+A new process has been created.
+    Subject User: charlie / CORP
+    New Process Name: C:\Windows\explorer.exe
+    Parent Process Name: C:\Windows\System32\services.exe
+    Command Line: C:\Windows\explorer.exe
+----------------------------------------------------------------------------------------------------
+
+Event 85
+TimeCreated: 2026-08-26 09:58:45
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: FILE01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: FILE01$
+    Logon Type: 3
+    New Logon: Account Name: svc_backup, Account Domain: CORP
+    Authentication Package: NTLM
+    Workstation Name: FILE01
+    Source Network Address: 10.10.20.15
+----------------------------------------------------------------------------------------------------
+
+Event 86
+TimeCreated: 2026-08-26 10:00:18
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: WS-HR01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: WS-HR01$
+    Logon Type: 3
+    New Logon: Account Name: bob, Account Domain: CORP
+    Authentication Package: NTLM
+    Workstation Name: WS-HR01
+    Source Network Address: 10.10.30.20
+----------------------------------------------------------------------------------------------------
+
+Event 87
+TimeCreated: 2026-08-26 10:02:04
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: DC01.corp.local
+An account failed to log on.
+    Account Name: alice, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 2
+    Authentication Package: NTLM
+    Workstation Name: DC01
+    Source Network Address: 10.10.20.22
+----------------------------------------------------------------------------------------------------
+
+Event 88
+TimeCreated: 2026-08-26 10:03:27
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: APP01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: APP01$
+    Logon Type: 3
+    New Logon: Account Name: svc_backup, Account Domain: CORP
+    Authentication Package: NTLM
+    Workstation Name: APP01
+    Source Network Address: 10.10.20.22
+----------------------------------------------------------------------------------------------------
+
+Event 89
+TimeCreated: 2026-08-26 10:05:03
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4688
+Level: Information
+Computer: WS-IT03.corp.local
+A new process has been created.
+    Subject User: alice / CORP
+    New Process Name: C:\Windows\System32\conhost.exe
+    Parent Process Name: C:\Windows\System32\services.exe
+    Command Line: C:\Windows\System32\conhost.exe
+----------------------------------------------------------------------------------------------------
+
+Event 90
+TimeCreated: 2026-08-26 10:06:46
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: APP01.corp.local
+An account failed to log on.
+    Account Name: svc_backup, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 2
+    Authentication Package: NTLM
+    Workstation Name: APP01
+    Source Network Address: 10.10.20.15
+----------------------------------------------------------------------------------------------------
+
+Event 91
+TimeCreated: 2026-08-26 10:08:22
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: APP01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: APP01$
+    Logon Type: 2
+    New Logon: Account Name: alice, Account Domain: CORP
+    Authentication Package: Kerberos
+    Workstation Name: APP01
+    Source Network Address: 10.10.20.22
+----------------------------------------------------------------------------------------------------
+
+Event 92
+TimeCreated: 2026-08-26 10:09:00
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4688
+Level: Information
+Computer: APP01.corp.local
+A new process has been created.
+    Subject User: alice / CORP
+    New Process Name: C:\Windows\explorer.exe
+    Parent Process Name: C:\Windows\System32\services.exe
+    Command Line: C:\Windows\explorer.exe
+----------------------------------------------------------------------------------------------------
+
+Event 93
+TimeCreated: 2026-08-26 10:09:37
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: WS-HR01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: WS-HR01$
+    Logon Type: 3
+    New Logon: Account Name: svc_backup, Account Domain: CORP
+    Authentication Package: NTLM
+    Workstation Name: WS-HR01
+    Source Network Address: 10.10.20.16
+----------------------------------------------------------------------------------------------------
+
+Event 94
+TimeCreated: 2026-08-26 10:11:20
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: WS-FIN02.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: WS-FIN02$
+    Logon Type: 2
+    New Logon: Account Name: charlie, Account Domain: CORP
+    Authentication Package: Kerberos
+    Workstation Name: WS-FIN02
+    Source Network Address: 10.10.20.15
+----------------------------------------------------------------------------------------------------
+
+Event 95
+TimeCreated: 2026-08-26 10:12:16
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: DC01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: DC01$
+    Logon Type: 2
+    New Logon: Account Name: charlie, Account Domain: CORP
+    Authentication Package: Kerberos
+    Workstation Name: DC01
+    Source Network Address: 10.10.30.20
+----------------------------------------------------------------------------------------------------
+
+Event 96
+TimeCreated: 2026-08-26 10:13:05
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4634
+Level: Information
+Computer: WS-FIN02.corp.local
+An account was logged off.
+    Account Name: svc_backup, Account Domain: CORP
+    Logon Type: 3
+    Client Address: 10.10.30.20
+----------------------------------------------------------------------------------------------------
+
+Event 97
+TimeCreated: 2026-08-26 10:14:20
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: WS-IT03.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: WS-IT03$
+    Logon Type: 3
+    New Logon: Account Name: alice, Account Domain: CORP
+    Authentication Package: NTLM
+    Workstation Name: WS-IT03
+    Source Network Address: 10.10.20.22
+----------------------------------------------------------------------------------------------------
+
+Event 98
+TimeCreated: 2026-08-26 10:15:36
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: WS-IT03.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: WS-IT03$
+    Logon Type: 2
+    New Logon: Account Name: svc_backup, Account Domain: CORP
+    Authentication Package: Kerberos
+    Workstation Name: WS-IT03
+    Source Network Address: 10.10.20.16
+----------------------------------------------------------------------------------------------------
+
+Event 99
+TimeCreated: 2026-08-26 10:15:58
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4688
+Level: Information
+Computer: WS-IT03.corp.local
+A new process has been created.
+    Subject User: svc_backup / CORP
+    New Process Name: C:\Windows\System32\svchost.exe
+    Parent Process Name: C:\Windows\System32\services.exe
+    Command Line: C:\Windows\System32\svchost.exe
+----------------------------------------------------------------------------------------------------
+
+Event 100
+TimeCreated: 2026-08-26 10:17:02
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: WS-HR01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: WS-HR01$
+    Logon Type: 3
+    New Logon: Account Name: bob, Account Domain: CORP
+    Authentication Package: NTLM
+    Workstation Name: WS-HR01
+    Source Network Address: 10.10.20.16
+----------------------------------------------------------------------------------------------------
+
+Event 101
+TimeCreated: 2026-08-26 10:18:03
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: WS-IT03.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: WS-IT03$
+    Logon Type: 2
+    New Logon: Account Name: charlie, Account Domain: CORP
+    Authentication Package: Kerberos
+    Workstation Name: WS-IT03
+    Source Network Address: 10.10.20.22
+----------------------------------------------------------------------------------------------------
+
+Event 102
+TimeCreated: 2026-08-26 10:19:21
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: FILE01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: FILE01$
+    Logon Type: 2
+    New Logon: Account Name: bob, Account Domain: CORP
+    Authentication Package: Kerberos
+    Workstation Name: FILE01
+    Source Network Address: 10.10.20.16
+----------------------------------------------------------------------------------------------------
+
+Event 103
+TimeCreated: 2026-08-26 10:20:00
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: FILE01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: FILE01$
+    Logon Type: 2
+    New Logon: Account Name: svc_sql, Account Domain: CORP
+    Authentication Package: Kerberos
+    Workstation Name: FILE01
+    Source Network Address: 10.10.20.15
+----------------------------------------------------------------------------------------------------
+
+Event 104
+TimeCreated: 2026-08-26 10:21:40
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: WS-HR01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: WS-HR01$
+    Logon Type: 2
+    New Logon: Account Name: alice, Account Domain: CORP
+    Authentication Package: Kerberos
+    Workstation Name: WS-HR01
+    Source Network Address: 10.10.20.15
+----------------------------------------------------------------------------------------------------
+
+Event 105
+TimeCreated: 2026-08-26 10:23:08
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: DC01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: DC01$
+    Logon Type: 2
+    New Logon: Account Name: alice, Account Domain: CORP
+    Authentication Package: Kerberos
+    Workstation Name: DC01
+    Source Network Address: 10.10.20.16
+----------------------------------------------------------------------------------------------------
+
+Event 106
+TimeCreated: 2026-08-26 10:23:59
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: FILE01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: FILE01$
+    Logon Type: 3
+    New Logon: Account Name: svc_backup, Account Domain: CORP
+    Authentication Package: NTLM
+    Workstation Name: FILE01
+    Source Network Address: 10.10.20.15
+----------------------------------------------------------------------------------------------------
+
+Event 107
+TimeCreated: 2026-08-26 10:25:46
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4634
+Level: Information
+Computer: APP01.corp.local
+An account was logged off.
+    Account Name: svc_backup, Account Domain: CORP
+    Logon Type: 2
+    Client Address: 10.10.20.15
+----------------------------------------------------------------------------------------------------
+
+Event 108
+TimeCreated: 2026-08-26 10:26:57
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: WS-FIN02.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: WS-FIN02$
+    Logon Type: 2
+    New Logon: Account Name: svc_backup, Account Domain: CORP
+    Authentication Package: Kerberos
+    Workstation Name: WS-FIN02
+    Source Network Address: 10.10.20.16
+----------------------------------------------------------------------------------------------------
+
+Event 109
+TimeCreated: 2026-08-26 10:27:49
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: WS-HR01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: WS-HR01$
+    Logon Type: 3
+    New Logon: Account Name: charlie, Account Domain: CORP
+    Authentication Package: NTLM
+    Workstation Name: WS-HR01
+    Source Network Address: 10.10.20.16
+----------------------------------------------------------------------------------------------------
+
+Event 110
+TimeCreated: 2026-08-26 10:29:33
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: WS-HR01.corp.local
+An account failed to log on.
+    Account Name: charlie, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 3
+    Authentication Package: NTLM
+    Workstation Name: WS-HR01
+    Source Network Address: 10.10.30.20
+----------------------------------------------------------------------------------------------------
+
+Event 111
+TimeCreated: 2026-08-26 10:29:59
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4634
+Level: Information
+Computer: DC01.corp.local
+An account was logged off.
+    Account Name: charlie, Account Domain: CORP
+    Logon Type: 2
+    Client Address: 10.10.20.15
+----------------------------------------------------------------------------------------------------
+
+Event 112
+TimeCreated: 2026-08-26 10:30:38
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: APP01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: APP01$
+    Logon Type: 3
+    New Logon: Account Name: charlie, Account Domain: CORP
+    Authentication Package: NTLM
+    Workstation Name: APP01
+    Source Network Address: 10.10.30.20
+----------------------------------------------------------------------------------------------------
+
+Event 113
+TimeCreated: 2026-08-26 10:31:27
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4634
+Level: Information
+Computer: DC01.corp.local
+An account was logged off.
+    Account Name: charlie, Account Domain: CORP
+    Logon Type: 2
+    Client Address: 10.10.30.20
+----------------------------------------------------------------------------------------------------
+
+Event 114
+TimeCreated: 2026-08-26 10:33:07
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4688
+Level: Information
+Computer: WS-HR01.corp.local
+A new process has been created.
+    Subject User: bob / CORP
+    New Process Name: C:\Windows\System32\svchost.exe
+    Parent Process Name: C:\Windows\System32\services.exe
+    Command Line: C:\Windows\System32\svchost.exe
+----------------------------------------------------------------------------------------------------
+
+Event 115
+TimeCreated: 2026-08-26 10:34:30
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: WS-IT03.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: WS-IT03$
+    Logon Type: 2
+    New Logon: Account Name: charlie, Account Domain: CORP
+    Authentication Package: Kerberos
+    Workstation Name: WS-IT03
+    Source Network Address: 10.10.20.22
+----------------------------------------------------------------------------------------------------
+
+Event 116
+TimeCreated: 2026-08-26 10:35:44
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: WS-FIN02.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: WS-FIN02$
+    Logon Type: 2
+    New Logon: Account Name: bob, Account Domain: CORP
+    Authentication Package: Kerberos
+    Workstation Name: WS-FIN02
+    Source Network Address: 10.10.20.16
+----------------------------------------------------------------------------------------------------
+
+Event 117
+TimeCreated: 2026-08-26 10:36:25
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4672
+Level: Information
+Computer: APP01.corp.local
+Special privileges assigned to new logon.
+    Account Name: alice, Account Domain: CORP
+    Privileges: SeSecurityPrivilege, SeBackupPrivilege, SeRestorePrivilege
+----------------------------------------------------------------------------------------------------
+
+Event 118
+TimeCreated: 2026-08-26 10:37:42
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: FILE01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: FILE01$
+    Logon Type: 2
+    New Logon: Account Name: charlie, Account Domain: CORP
+    Authentication Package: Kerberos
+    Workstation Name: FILE01
+    Source Network Address: 10.10.30.20
+----------------------------------------------------------------------------------------------------
+
+Event 119
+TimeCreated: 2026-08-26 10:39:30
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: APP01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: APP01$
+    Logon Type: 2
+    New Logon: Account Name: svc_backup, Account Domain: CORP
+    Authentication Package: Kerberos
+    Workstation Name: APP01
+    Source Network Address: 10.10.20.16
+----------------------------------------------------------------------------------------------------
+
+Event 120
+TimeCreated: 2026-08-26 10:40:26
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: WS-IT03.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: WS-IT03$
+    Logon Type: 3
+    New Logon: Account Name: alice, Account Domain: CORP
+    Authentication Package: NTLM
+    Workstation Name: WS-IT03
+    Source Network Address: 10.10.20.15
+----------------------------------------------------------------------------------------------------
+
+Event 121
+TimeCreated: 2026-08-26 10:41:27
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4688
+Level: Information
+Computer: WS-FIN02.corp.local
+A new process has been created.
+    Subject User: svc_backup / CORP
+    New Process Name: C:\Windows\System32\svchost.exe
+    Parent Process Name: C:\Windows\System32\services.exe
+    Command Line: C:\Windows\System32\svchost.exe
+----------------------------------------------------------------------------------------------------
+
+Event 122
+TimeCreated: 2026-08-26 10:43:07
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: WS-FIN02.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: WS-FIN02$
+    Logon Type: 2
+    New Logon: Account Name: charlie, Account Domain: CORP
+    Authentication Package: Kerberos
+    Workstation Name: WS-FIN02
+    Source Network Address: 10.10.20.22
+----------------------------------------------------------------------------------------------------
+
+Event 123
+TimeCreated: 2026-08-26 10:43:42
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: DC01.corp.local
+An account failed to log on.
+    Account Name: bob, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 3
+    Authentication Package: NTLM
+    Workstation Name: DC01
+    Source Network Address: 10.10.30.20
+----------------------------------------------------------------------------------------------------
+
+Event 124
+TimeCreated: 2026-08-26 10:45:25
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: WS-IT03.corp.local
+An account failed to log on.
+    Account Name: svc_sql, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 3
+    Authentication Package: NTLM
+    Workstation Name: WS-IT03
+    Source Network Address: 10.10.20.16
+----------------------------------------------------------------------------------------------------
+
+Event 125
+TimeCreated: 2026-08-26 10:46:33
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4634
+Level: Information
+Computer: WS-IT03.corp.local
+An account was logged off.
+    Account Name: charlie, Account Domain: CORP
+    Logon Type: 2
+    Client Address: 10.10.20.16
+----------------------------------------------------------------------------------------------------
+
+Event 126
+TimeCreated: 2026-08-26 10:47:10
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: WS-IT03.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: WS-IT03$
+    Logon Type: 2
+    New Logon: Account Name: alice, Account Domain: CORP
+    Authentication Package: Kerberos
+    Workstation Name: WS-IT03
+    Source Network Address: 10.10.20.15
+----------------------------------------------------------------------------------------------------
+
+Event 127
+TimeCreated: 2026-08-26 10:48:30
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: DC01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: DC01$
+    Logon Type: 3
+    New Logon: Account Name: alice, Account Domain: CORP
+    Authentication Package: NTLM
+    Workstation Name: DC01
+    Source Network Address: 10.10.20.22
+----------------------------------------------------------------------------------------------------
+
+Event 128
+TimeCreated: 2026-08-26 10:50:13
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4688
+Level: Information
+Computer: WS-HR01.corp.local
+A new process has been created.
+    Subject User: charlie / CORP
+    New Process Name: C:\Windows\System32\svchost.exe
+    Parent Process Name: C:\Windows\System32\services.exe
+    Command Line: C:\Windows\System32\svchost.exe
+----------------------------------------------------------------------------------------------------
+
+Event 129
+TimeCreated: 2026-08-26 10:51:08
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4672
+Level: Information
+Computer: APP01.corp.local
+Special privileges assigned to new logon.
+    Account Name: alice, Account Domain: CORP
+    Privileges: SeSecurityPrivilege, SeBackupPrivilege, SeRestorePrivilege
+----------------------------------------------------------------------------------------------------
+
+Event 130
+TimeCreated: 2026-08-26 10:52:00
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4672
+Level: Information
+Computer: WS-HR01.corp.local
+Special privileges assigned to new logon.
+    Account Name: charlie, Account Domain: CORP
+    Privileges: SeSecurityPrivilege, SeBackupPrivilege, SeRestorePrivilege
+----------------------------------------------------------------------------------------------------
+
+Event 131
+TimeCreated: 2026-08-26 10:52:37
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: WS-FIN02.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: WS-FIN02$
+    Logon Type: 2
+    New Logon: Account Name: charlie, Account Domain: CORP
+    Authentication Package: Kerberos
+    Workstation Name: WS-FIN02
+    Source Network Address: 10.10.20.22
+----------------------------------------------------------------------------------------------------
+
+Event 132
+TimeCreated: 2026-08-26 10:53:08
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: APP01.corp.local
+An account failed to log on.
+    Account Name: bob, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 2
+    Authentication Package: NTLM
+    Workstation Name: APP01
+    Source Network Address: 10.10.20.15
+----------------------------------------------------------------------------------------------------
+
+Event 133
+TimeCreated: 2026-08-26 10:53:49
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: APP01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: APP01$
+    Logon Type: 2
+    New Logon: Account Name: bob, Account Domain: CORP
+    Authentication Package: Kerberos
+    Workstation Name: APP01
+    Source Network Address: 10.10.20.15
+----------------------------------------------------------------------------------------------------
+
+Event 134
+TimeCreated: 2026-08-26 10:54:31
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4672
+Level: Information
+Computer: APP01.corp.local
+Special privileges assigned to new logon.
+    Account Name: svc_sql, Account Domain: CORP
+    Privileges: SeSecurityPrivilege, SeBackupPrivilege, SeRestorePrivilege
+----------------------------------------------------------------------------------------------------
+
+Event 135
+TimeCreated: 2026-08-26 10:55:32
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: WS-FIN02.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: WS-FIN02$
+    Logon Type: 3
+    New Logon: Account Name: bob, Account Domain: CORP
+    Authentication Package: NTLM
+    Workstation Name: WS-FIN02
+    Source Network Address: 10.10.20.16
+----------------------------------------------------------------------------------------------------
+
+Event 136
+TimeCreated: 2026-08-26 10:56:44
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4688
+Level: Information
+Computer: APP01.corp.local
+A new process has been created.
+    Subject User: charlie / CORP
+    New Process Name: C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE
+    Parent Process Name: C:\Windows\System32\services.exe
+    Command Line: C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE
+----------------------------------------------------------------------------------------------------
+
+Event 137
+TimeCreated: 2026-08-26 10:57:41
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: WS-IT03.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: WS-IT03$
+    Logon Type: 2
+    New Logon: Account Name: alice, Account Domain: CORP
+    Authentication Package: Kerberos
+    Workstation Name: WS-IT03
+    Source Network Address: 10.10.20.16
+----------------------------------------------------------------------------------------------------
+
+Event 138
+TimeCreated: 2026-08-26 10:58:39
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4688
+Level: Information
+Computer: WS-HR01.corp.local
+A new process has been created.
+    Subject User: bob / CORP
+    New Process Name: C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE
+    Parent Process Name: C:\Windows\System32\services.exe
+    Command Line: C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE
+----------------------------------------------------------------------------------------------------
+
+Event 139
+TimeCreated: 2026-08-26 10:59:57
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4688
+Level: Information
+Computer: WS-IT03.corp.local
+A new process has been created.
+    Subject User: bob / CORP
+    New Process Name: C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE
+    Parent Process Name: C:\Windows\System32\services.exe
+    Command Line: C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE
+----------------------------------------------------------------------------------------------------
+
+Event 140
+TimeCreated: 2026-08-26 11:00:23
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: WS-HR01.corp.local
+An account failed to log on.
+    Account Name: svc_backup, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 3
+    Authentication Package: NTLM
+    Workstation Name: WS-HR01
+    Source Network Address: 10.10.20.15
+----------------------------------------------------------------------------------------------------
+
+Event 141
+TimeCreated: 2026-08-26 11:01:04
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4688
+Level: Information
+Computer: WS-FIN02.corp.local
+A new process has been created.
+    Subject User: alice / CORP
+    New Process Name: C:\Windows\System32\svchost.exe
+    Parent Process Name: C:\Windows\System32\services.exe
+    Command Line: C:\Windows\System32\svchost.exe
+----------------------------------------------------------------------------------------------------
+
+Event 142
+TimeCreated: 2026-08-26 11:02:03
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4688
+Level: Information
+Computer: WS-FIN02.corp.local
+A new process has been created.
+    Subject User: bob / CORP
+    New Process Name: C:\Windows\System32\svchost.exe
+    Parent Process Name: C:\Windows\System32\services.exe
+    Command Line: C:\Windows\System32\svchost.exe
+----------------------------------------------------------------------------------------------------
+
+Event 143
+TimeCreated: 2026-08-26 11:03:19
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: DC01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: DC01$
+    Logon Type: 3
+    New Logon: Account Name: svc_sql, Account Domain: CORP
+    Authentication Package: NTLM
+    Workstation Name: DC01
+    Source Network Address: 10.10.30.20
+----------------------------------------------------------------------------------------------------
+
+Event 144
+TimeCreated: 2026-08-26 11:04:35
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4634
+Level: Information
+Computer: WS-HR01.corp.local
+An account was logged off.
+    Account Name: charlie, Account Domain: CORP
+    Logon Type: 2
+    Client Address: 10.10.20.16
+----------------------------------------------------------------------------------------------------
+
+Event 145
+TimeCreated: 2026-08-26 11:05:33
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: DC01.corp.local
+An account failed to log on.
+    Account Name: bob, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 3
+    Authentication Package: NTLM
+    Workstation Name: DC01
+    Source Network Address: 10.10.20.16
+----------------------------------------------------------------------------------------------------
+
+Event 146
+TimeCreated: 2026-08-26 11:07:04
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4634
+Level: Information
+Computer: APP01.corp.local
+An account was logged off.
+    Account Name: charlie, Account Domain: CORP
+    Logon Type: 2
+    Client Address: 10.10.30.20
+----------------------------------------------------------------------------------------------------
+
+Event 147
+TimeCreated: 2026-08-26 11:08:11
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: WS-FIN02.corp.local
+An account failed to log on.
+    Account Name: svc_sql, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 2
+    Authentication Package: NTLM
+    Workstation Name: WS-FIN02
+    Source Network Address: 10.10.20.15
+----------------------------------------------------------------------------------------------------
+
+Event 148
+TimeCreated: 2026-08-26 11:09:01
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: WS-HR01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: WS-HR01$
+    Logon Type: 2
+    New Logon: Account Name: charlie, Account Domain: CORP
+    Authentication Package: Kerberos
+    Workstation Name: WS-HR01
+    Source Network Address: 10.10.30.20
+----------------------------------------------------------------------------------------------------
+
+Event 149
+TimeCreated: 2026-08-26 11:10:45
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4688
+Level: Information
+Computer: WS-FIN02.corp.local
+A new process has been created.
+    Subject User: svc_backup / CORP
+    New Process Name: C:\Windows\System32\conhost.exe
+    Parent Process Name: C:\Windows\System32\services.exe
+    Command Line: C:\Windows\System32\conhost.exe
+----------------------------------------------------------------------------------------------------
+
+Event 150
+TimeCreated: 2026-08-26 11:11:45
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4634
+Level: Information
+Computer: WS-FIN02.corp.local
+An account was logged off.
+    Account Name: svc_sql, Account Domain: CORP
+    Logon Type: 2
+    Client Address: 10.10.30.20
+----------------------------------------------------------------------------------------------------
+
+Event 151
+TimeCreated: 2026-08-26 11:13:25
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: APP01.corp.local
+An account failed to log on.
+    Account Name: bob, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 2
+    Authentication Package: NTLM
+    Workstation Name: APP01
+    Source Network Address: 10.10.20.16
+----------------------------------------------------------------------------------------------------
+
+Event 152
+TimeCreated: 2026-08-26 11:13:57
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4672
+Level: Information
+Computer: WS-IT03.corp.local
+Special privileges assigned to new logon.
+    Account Name: bob, Account Domain: CORP
+    Privileges: SeSecurityPrivilege, SeBackupPrivilege, SeRestorePrivilege
+----------------------------------------------------------------------------------------------------
+
+Event 153
+TimeCreated: 2026-08-26 11:15:18
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: WS-HR01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: WS-HR01$
+    Logon Type: 3
+    New Logon: Account Name: svc_sql, Account Domain: CORP
+    Authentication Package: NTLM
+    Workstation Name: WS-HR01
+    Source Network Address: 10.10.20.22
+----------------------------------------------------------------------------------------------------
+
+Event 154
+TimeCreated: 2026-08-26 11:15:49
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4634
+Level: Information
+Computer: WS-FIN02.corp.local
+An account was logged off.
+    Account Name: alice, Account Domain: CORP
+    Logon Type: 2
+    Client Address: 10.10.20.22
+----------------------------------------------------------------------------------------------------
+
+Event 155
+TimeCreated: 2026-08-26 11:16:35
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4634
+Level: Information
+Computer: WS-FIN02.corp.local
+An account was logged off.
+    Account Name: bob, Account Domain: CORP
+    Logon Type: 2
+    Client Address: 10.10.20.15
+----------------------------------------------------------------------------------------------------
+
+Event 156
+TimeCreated: 2026-08-26 11:18:16
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: WS-HR01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: WS-HR01$
+    Logon Type: 2
+    New Logon: Account Name: svc_backup, Account Domain: CORP
+    Authentication Package: Kerberos
+    Workstation Name: WS-HR01
+    Source Network Address: 10.10.30.20
+----------------------------------------------------------------------------------------------------
+
+Event 157
+TimeCreated: 2026-08-26 11:19:31
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: alice, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 3
+    Authentication Package: NTLM
+    Workstation Name: FILE01
+    Source Network Address: 10.10.20.22
+----------------------------------------------------------------------------------------------------
+
+Event 158
+TimeCreated: 2026-08-26 11:20:16
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4634
+Level: Information
+Computer: WS-IT03.corp.local
+An account was logged off.
+    Account Name: charlie, Account Domain: CORP
+    Logon Type: 2
+    Client Address: 10.10.30.20
+----------------------------------------------------------------------------------------------------
+
+Event 159
+TimeCreated: 2026-08-26 11:20:43
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: WS-IT03.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: WS-IT03$
+    Logon Type: 3
+    New Logon: Account Name: charlie, Account Domain: CORP
+    Authentication Package: NTLM
+    Workstation Name: WS-IT03
+    Source Network Address: 10.10.20.22
+----------------------------------------------------------------------------------------------------
+
+Event 160
+TimeCreated: 2026-08-26 11:22:10
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: WS-HR01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: WS-HR01$
+    Logon Type: 2
+    New Logon: Account Name: svc_sql, Account Domain: CORP
+    Authentication Package: Kerberos
+    Workstation Name: WS-HR01
+    Source Network Address: 10.10.20.15
+----------------------------------------------------------------------------------------------------
+
+Event 161
+TimeCreated: 2026-08-26 11:22:59
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4688
+Level: Information
+Computer: FILE01.corp.local
+A new process has been created.
+    Subject User: alice / CORP
+    New Process Name: C:\Windows\explorer.exe
+    Parent Process Name: C:\Windows\System32\services.exe
+    Command Line: C:\Windows\explorer.exe
+----------------------------------------------------------------------------------------------------
+
+Event 162
+TimeCreated: 2026-08-26 11:23:40
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4634
+Level: Information
+Computer: WS-FIN02.corp.local
+An account was logged off.
+    Account Name: bob, Account Domain: CORP
+    Logon Type: 2
+    Client Address: 10.10.20.22
+----------------------------------------------------------------------------------------------------
+
+Event 163
+TimeCreated: 2026-08-26 11:24:04
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: DC01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: DC01$
+    Logon Type: 3
+    New Logon: Account Name: svc_backup, Account Domain: CORP
+    Authentication Package: NTLM
+    Workstation Name: DC01
+    Source Network Address: 10.10.20.16
+----------------------------------------------------------------------------------------------------
+
+Event 164
+TimeCreated: 2026-08-26 11:25:12
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: APP01.corp.local
+An account failed to log on.
+    Account Name: svc_backup, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 2
+    Authentication Package: NTLM
+    Workstation Name: APP01
+    Source Network Address: 10.10.20.15
+----------------------------------------------------------------------------------------------------
+
+Event 165
+TimeCreated: 2026-08-26 11:25:55
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: WS-FIN02.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: WS-FIN02$
+    Logon Type: 3
+    New Logon: Account Name: svc_backup, Account Domain: CORP
+    Authentication Package: NTLM
+    Workstation Name: WS-FIN02
+    Source Network Address: 10.10.30.20
+----------------------------------------------------------------------------------------------------
+
+Event 166
+TimeCreated: 2026-08-26 11:26:58
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: DC01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: DC01$
+    Logon Type: 3
+    New Logon: Account Name: bob, Account Domain: CORP
+    Authentication Package: NTLM
+    Workstation Name: DC01
+    Source Network Address: 10.10.20.16
+----------------------------------------------------------------------------------------------------
+
+Event 167
+TimeCreated: 2026-08-26 11:27:23
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4634
+Level: Information
+Computer: DC01.corp.local
+An account was logged off.
+    Account Name: svc_backup, Account Domain: CORP
+    Logon Type: 3
+    Client Address: 10.10.20.22
+----------------------------------------------------------------------------------------------------
+
+Event 168
+TimeCreated: 2026-08-26 11:28:17
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4688
+Level: Information
+Computer: DC01.corp.local
+A new process has been created.
+    Subject User: svc_backup / CORP
+    New Process Name: C:\Windows\System32\conhost.exe
+    Parent Process Name: C:\Windows\System32\services.exe
+    Command Line: C:\Windows\System32\conhost.exe
+----------------------------------------------------------------------------------------------------
+
+Event 169
+TimeCreated: 2026-08-26 11:28:55
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: APP01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: APP01$
+    Logon Type: 2
+    New Logon: Account Name: svc_sql, Account Domain: CORP
+    Authentication Package: Kerberos
+    Workstation Name: APP01
+    Source Network Address: 10.10.30.20
+----------------------------------------------------------------------------------------------------
+
+Event 170
+TimeCreated: 2026-08-26 11:30:13
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4688
+Level: Information
+Computer: WS-HR01.corp.local
+A new process has been created.
+    Subject User: svc_backup / CORP
+    New Process Name: C:\Windows\System32\conhost.exe
+    Parent Process Name: C:\Windows\System32\services.exe
+    Command Line: C:\Windows\System32\conhost.exe
+----------------------------------------------------------------------------------------------------
+
+Event 171
+TimeCreated: 2026-08-26 11:31:52
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4688
+Level: Information
+Computer: DC01.corp.local
+A new process has been created.
+    Subject User: svc_backup / CORP
+    New Process Name: C:\Windows\System32\svchost.exe
+    Parent Process Name: C:\Windows\System32\services.exe
+    Command Line: C:\Windows\System32\svchost.exe
+----------------------------------------------------------------------------------------------------
+
+Event 172
+TimeCreated: 2026-08-26 11:33:42
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4634
+Level: Information
+Computer: WS-FIN02.corp.local
+An account was logged off.
+    Account Name: charlie, Account Domain: CORP
+    Logon Type: 3
+    Client Address: 10.10.20.16
+----------------------------------------------------------------------------------------------------
+
+Event 173
+TimeCreated: 2026-08-26 11:35:15
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4688
+Level: Information
+Computer: WS-FIN02.corp.local
+A new process has been created.
+    Subject User: svc_backup / CORP
+    New Process Name: C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE
+    Parent Process Name: C:\Windows\System32\services.exe
+    Command Line: C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE
+----------------------------------------------------------------------------------------------------
+
+Event 174
+TimeCreated: 2026-08-26 11:36:23
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: APP01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: APP01$
+    Logon Type: 3
+    New Logon: Account Name: bob, Account Domain: CORP
+    Authentication Package: NTLM
+    Workstation Name: APP01
+    Source Network Address: 10.10.20.22
+----------------------------------------------------------------------------------------------------
+
+Event 175
+TimeCreated: 2026-08-26 11:37:19
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: WS-IT03.corp.local
+An account failed to log on.
+    Account Name: svc_backup, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 2
+    Authentication Package: NTLM
+    Workstation Name: WS-IT03
+    Source Network Address: 10.10.20.15
+----------------------------------------------------------------------------------------------------
+
+Event 176
+TimeCreated: 2026-08-26 11:38:14
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: DC01.corp.local
+An account failed to log on.
+    Account Name: alice, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 3
+    Authentication Package: NTLM
+    Workstation Name: DC01
+    Source Network Address: 10.10.30.20
+----------------------------------------------------------------------------------------------------
+
+Event 177
+TimeCreated: 2026-08-26 11:39:14
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: WS-HR01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: WS-HR01$
+    Logon Type: 3
+    New Logon: Account Name: charlie, Account Domain: CORP
+    Authentication Package: NTLM
+    Workstation Name: WS-HR01
+    Source Network Address: 10.10.30.20
+----------------------------------------------------------------------------------------------------
+
+Event 178
+TimeCreated: 2026-08-26 11:39:43
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: FILE01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: FILE01$
+    Logon Type: 3
+    New Logon: Account Name: bob, Account Domain: CORP
+    Authentication Package: NTLM
+    Workstation Name: FILE01
+    Source Network Address: 10.10.20.15
+----------------------------------------------------------------------------------------------------
+
+Event 179
+TimeCreated: 2026-08-26 11:41:10
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4634
+Level: Information
+Computer: WS-FIN02.corp.local
+An account was logged off.
+    Account Name: svc_sql, Account Domain: CORP
+    Logon Type: 2
+    Client Address: 10.10.30.20
+----------------------------------------------------------------------------------------------------
+
+Event 180
+TimeCreated: 2026-08-26 11:41:41
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: WS-FIN02.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: WS-FIN02$
+    Logon Type: 2
+    New Logon: Account Name: svc_backup, Account Domain: CORP
+    Authentication Package: Kerberos
+    Workstation Name: WS-FIN02
+    Source Network Address: 10.10.30.20
+----------------------------------------------------------------------------------------------------
+
+Event 181
+TimeCreated: 2026-08-26 11:42:30
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: APP01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: APP01$
+    Logon Type: 2
+    New Logon: Account Name: bob, Account Domain: CORP
+    Authentication Package: Kerberos
+    Workstation Name: APP01
+    Source Network Address: 10.10.20.15
+----------------------------------------------------------------------------------------------------
+
+Event 182
+TimeCreated: 2026-08-26 11:42:56
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4634
+Level: Information
+Computer: APP01.corp.local
+An account was logged off.
+    Account Name: svc_sql, Account Domain: CORP
+    Logon Type: 2
+    Client Address: 10.10.30.20
+----------------------------------------------------------------------------------------------------
+
+Event 183
+TimeCreated: 2026-08-26 11:44:28
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4672
+Level: Information
+Computer: DC01.corp.local
+Special privileges assigned to new logon.
+    Account Name: svc_backup, Account Domain: CORP
+    Privileges: SeSecurityPrivilege, SeBackupPrivilege, SeRestorePrivilege
+----------------------------------------------------------------------------------------------------
+
+Event 184
+TimeCreated: 2026-08-26 11:46:02
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: APP01.corp.local
+An account failed to log on.
+    Account Name: alice, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 3
+    Authentication Package: NTLM
+    Workstation Name: APP01
+    Source Network Address: 10.10.20.16
+----------------------------------------------------------------------------------------------------
+
+Event 185
+TimeCreated: 2026-08-26 11:47:16
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: APP01.corp.local
+An account failed to log on.
+    Account Name: alice, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 3
+    Authentication Package: NTLM
+    Workstation Name: APP01
+    Source Network Address: 10.10.20.22
+----------------------------------------------------------------------------------------------------
+
+Event 186
+TimeCreated: 2026-08-26 11:47:39
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: DC01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: DC01$
+    Logon Type: 3
+    New Logon: Account Name: svc_sql, Account Domain: CORP
+    Authentication Package: NTLM
+    Workstation Name: DC01
+    Source Network Address: 10.10.20.16
+----------------------------------------------------------------------------------------------------
+
+Event 187
+TimeCreated: 2026-08-26 11:49:09
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: WS-FIN02.corp.local
+An account failed to log on.
+    Account Name: svc_backup, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 3
+    Authentication Package: NTLM
+    Workstation Name: WS-FIN02
+    Source Network Address: 10.10.20.22
+----------------------------------------------------------------------------------------------------
+
+Event 188
+TimeCreated: 2026-08-26 11:50:59
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4688
+Level: Information
+Computer: DC01.corp.local
+A new process has been created.
+    Subject User: svc_sql / CORP
+    New Process Name: C:\Windows\System32\svchost.exe
+    Parent Process Name: C:\Windows\System32\services.exe
+    Command Line: C:\Windows\System32\svchost.exe
+----------------------------------------------------------------------------------------------------
+
+Event 189
+TimeCreated: 2026-08-26 11:51:52
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: WS-IT03.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: WS-IT03$
+    Logon Type: 2
+    New Logon: Account Name: charlie, Account Domain: CORP
+    Authentication Package: Kerberos
+    Workstation Name: WS-IT03
+    Source Network Address: 10.10.20.22
+----------------------------------------------------------------------------------------------------
+
+Event 190
+TimeCreated: 2026-08-26 11:52:28
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4672
+Level: Information
+Computer: WS-FIN02.corp.local
+Special privileges assigned to new logon.
+    Account Name: bob, Account Domain: CORP
+    Privileges: SeSecurityPrivilege, SeBackupPrivilege, SeRestorePrivilege
+----------------------------------------------------------------------------------------------------
+
+Event 191
+TimeCreated: 2026-08-26 11:53:53
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4688
+Level: Information
+Computer: FILE01.corp.local
+A new process has been created.
+    Subject User: svc_backup / CORP
+    New Process Name: C:\Windows\System32\svchost.exe
+    Parent Process Name: C:\Windows\System32\services.exe
+    Command Line: C:\Windows\System32\svchost.exe
+----------------------------------------------------------------------------------------------------
+
+Event 192
+TimeCreated: 2026-08-26 11:54:46
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: WS-HR01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: WS-HR01$
+    Logon Type: 3
+    New Logon: Account Name: alice, Account Domain: CORP
+    Authentication Package: NTLM
+    Workstation Name: WS-HR01
+    Source Network Address: 10.10.20.22
+----------------------------------------------------------------------------------------------------
+
+Event 193
+TimeCreated: 2026-08-26 11:55:38
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: DC01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: DC01$
+    Logon Type: 3
+    New Logon: Account Name: svc_backup, Account Domain: CORP
+    Authentication Package: NTLM
+    Workstation Name: DC01
+    Source Network Address: 10.10.20.22
+----------------------------------------------------------------------------------------------------
+
+Event 194
+TimeCreated: 2026-08-26 11:56:25
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4688
+Level: Information
+Computer: DC01.corp.local
+A new process has been created.
+    Subject User: bob / CORP
+    New Process Name: C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE
+    Parent Process Name: C:\Windows\System32\services.exe
+    Command Line: C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE
+----------------------------------------------------------------------------------------------------
+
+Event 195
+TimeCreated: 2026-08-26 11:57:59
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4634
+Level: Information
+Computer: FILE01.corp.local
+An account was logged off.
+    Account Name: alice, Account Domain: CORP
+    Logon Type: 3
+    Client Address: 10.10.20.15
+----------------------------------------------------------------------------------------------------
+
+Event 196
+TimeCreated: 2026-08-26 11:58:28
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4672
+Level: Information
+Computer: FILE01.corp.local
+Special privileges assigned to new logon.
+    Account Name: bob, Account Domain: CORP
+    Privileges: SeSecurityPrivilege, SeBackupPrivilege, SeRestorePrivilege
+----------------------------------------------------------------------------------------------------
+
+Event 197
+TimeCreated: 2026-08-26 11:59:05
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4634
+Level: Information
+Computer: WS-IT03.corp.local
+An account was logged off.
+    Account Name: svc_sql, Account Domain: CORP
+    Logon Type: 2
+    Client Address: 10.10.20.16
+----------------------------------------------------------------------------------------------------
+
+Event 198
+TimeCreated: 2026-08-26 11:59:50
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: APP01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: APP01$
+    Logon Type: 2
+    New Logon: Account Name: svc_backup, Account Domain: CORP
+    Authentication Package: Kerberos
+    Workstation Name: APP01
+    Source Network Address: 10.10.20.22
+----------------------------------------------------------------------------------------------------
+
+Event 199
+TimeCreated: 2026-08-26 12:00:26
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: WS-IT03.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: WS-IT03$
+    Logon Type: 3
+    New Logon: Account Name: charlie, Account Domain: CORP
+    Authentication Package: NTLM
+    Workstation Name: WS-IT03
+    Source Network Address: 10.10.20.22
+----------------------------------------------------------------------------------------------------
+
+Event 200
+TimeCreated: 2026-08-26 12:01:24
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: APP01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: APP01$
+    Logon Type: 2
+    New Logon: Account Name: svc_backup, Account Domain: CORP
+    Authentication Package: Kerberos
+    Workstation Name: APP01
+    Source Network Address: 10.10.20.22
+----------------------------------------------------------------------------------------------------
+
+Event 201
+TimeCreated: 2026-08-26 12:02:27
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: WS-FIN02.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: WS-FIN02$
+    Logon Type: 3
+    New Logon: Account Name: alice, Account Domain: CORP
+    Authentication Package: NTLM
+    Workstation Name: WS-FIN02
+    Source Network Address: 10.10.20.22
+----------------------------------------------------------------------------------------------------
+
+Event 202
+TimeCreated: 2026-08-26 12:04:08
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: WS-FIN02.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: WS-FIN02$
+    Logon Type: 3
+    New Logon: Account Name: svc_sql, Account Domain: CORP
+    Authentication Package: NTLM
+    Workstation Name: WS-FIN02
+    Source Network Address: 10.10.30.20
+----------------------------------------------------------------------------------------------------
+
+Event 203
+TimeCreated: 2026-08-26 12:05:11
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4688
+Level: Information
+Computer: FILE01.corp.local
+A new process has been created.
+    Subject User: svc_sql / CORP
+    New Process Name: C:\Windows\System32\svchost.exe
+    Parent Process Name: C:\Windows\System32\services.exe
+    Command Line: C:\Windows\System32\svchost.exe
+----------------------------------------------------------------------------------------------------
+
+Event 204
+TimeCreated: 2026-08-26 12:06:44
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4634
+Level: Information
+Computer: DC01.corp.local
+An account was logged off.
+    Account Name: svc_backup, Account Domain: CORP
+    Logon Type: 3
+    Client Address: 10.10.20.16
+----------------------------------------------------------------------------------------------------
+
+Event 205
+TimeCreated: 2026-08-26 12:08:02
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: WS-FIN02.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: WS-FIN02$
+    Logon Type: 2
+    New Logon: Account Name: bob, Account Domain: CORP
+    Authentication Package: Kerberos
+    Workstation Name: WS-FIN02
+    Source Network Address: 10.10.30.20
+----------------------------------------------------------------------------------------------------
+
+Event 206
+TimeCreated: 2026-08-26 12:08:40
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: WS-FIN02.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: WS-FIN02$
+    Logon Type: 2
+    New Logon: Account Name: svc_sql, Account Domain: CORP
+    Authentication Package: Kerberos
+    Workstation Name: WS-FIN02
+    Source Network Address: 10.10.20.15
+----------------------------------------------------------------------------------------------------
+
+Event 207
+TimeCreated: 2026-08-26 12:10:11
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: WS-FIN02.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: WS-FIN02$
+    Logon Type: 2
+    New Logon: Account Name: svc_backup, Account Domain: CORP
+    Authentication Package: Kerberos
+    Workstation Name: WS-FIN02
+    Source Network Address: 10.10.20.22
+----------------------------------------------------------------------------------------------------
+
+Event 208
+TimeCreated: 2026-08-26 12:11:07
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: DC01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: DC01$
+    Logon Type: 2
+    New Logon: Account Name: charlie, Account Domain: CORP
+    Authentication Package: Kerberos
+    Workstation Name: DC01
+    Source Network Address: 10.10.20.16
+----------------------------------------------------------------------------------------------------
+
+Event 209
+TimeCreated: 2026-08-26 12:11:35
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4688
+Level: Information
+Computer: APP01.corp.local
+A new process has been created.
+    Subject User: charlie / CORP
+    New Process Name: C:\Windows\System32\conhost.exe
+    Parent Process Name: C:\Windows\System32\services.exe
+    Command Line: C:\Windows\System32\conhost.exe
+----------------------------------------------------------------------------------------------------
+
+Event 210
+TimeCreated: 2026-08-26 12:12:51
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4688
+Level: Information
+Computer: FILE01.corp.local
+A new process has been created.
+    Subject User: svc_backup / CORP
+    New Process Name: C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE
+    Parent Process Name: C:\Windows\System32\services.exe
+    Command Line: C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE
+----------------------------------------------------------------------------------------------------
+
+Event 211
+TimeCreated: 2026-08-26 12:13:39
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: WS-IT03.corp.local
+An account failed to log on.
+    Account Name: svc_sql, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 2
+    Authentication Package: NTLM
+    Workstation Name: WS-IT03
+    Source Network Address: 10.10.20.16
+----------------------------------------------------------------------------------------------------
+
+Event 212
+TimeCreated: 2026-08-26 12:15:17
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: WS-HR01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: WS-HR01$
+    Logon Type: 2
+    New Logon: Account Name: svc_sql, Account Domain: CORP
+    Authentication Package: Kerberos
+    Workstation Name: WS-HR01
+    Source Network Address: 10.10.20.15
+----------------------------------------------------------------------------------------------------
+
+Event 213
+TimeCreated: 2026-08-26 12:16:22
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4634
+Level: Information
+Computer: FILE01.corp.local
+An account was logged off.
+    Account Name: svc_backup, Account Domain: CORP
+    Logon Type: 3
+    Client Address: 10.10.20.22
+----------------------------------------------------------------------------------------------------
+
+Event 214
+TimeCreated: 2026-08-26 12:17:31
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: APP01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: APP01$
+    Logon Type: 2
+    New Logon: Account Name: alice, Account Domain: CORP
+    Authentication Package: Kerberos
+    Workstation Name: APP01
+    Source Network Address: 10.10.20.16
+----------------------------------------------------------------------------------------------------
+
+Event 215
+TimeCreated: 2026-08-26 12:18:57
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: DC01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: DC01$
+    Logon Type: 3
+    New Logon: Account Name: charlie, Account Domain: CORP
+    Authentication Package: NTLM
+    Workstation Name: DC01
+    Source Network Address: 10.10.20.22
+----------------------------------------------------------------------------------------------------
+
+Event 216
+TimeCreated: 2026-08-26 12:20:33
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4688
+Level: Information
+Computer: WS-IT03.corp.local
+A new process has been created.
+    Subject User: alice / CORP
+    New Process Name: C:\Windows\System32\svchost.exe
+    Parent Process Name: C:\Windows\System32\services.exe
+    Command Line: C:\Windows\System32\svchost.exe
+----------------------------------------------------------------------------------------------------
+
+Event 217
+TimeCreated: 2026-08-26 12:21:42
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4688
+Level: Information
+Computer: APP01.corp.local
+A new process has been created.
+    Subject User: svc_backup / CORP
+    New Process Name: C:\Windows\explorer.exe
+    Parent Process Name: C:\Windows\System32\services.exe
+    Command Line: C:\Windows\explorer.exe
+----------------------------------------------------------------------------------------------------
+
+Event 218
+TimeCreated: 2026-08-26 12:23:29
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: WS-IT03.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: WS-IT03$
+    Logon Type: 3
+    New Logon: Account Name: alice, Account Domain: CORP
+    Authentication Package: NTLM
+    Workstation Name: WS-IT03
+    Source Network Address: 10.10.20.15
+----------------------------------------------------------------------------------------------------
+
+Event 219
+TimeCreated: 2026-08-26 12:23:58
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4688
+Level: Information
+Computer: WS-FIN02.corp.local
+A new process has been created.
+    Subject User: svc_backup / CORP
+    New Process Name: C:\Windows\System32\svchost.exe
+    Parent Process Name: C:\Windows\System32\services.exe
+    Command Line: C:\Windows\System32\svchost.exe
+----------------------------------------------------------------------------------------------------
+
+Event 220
+TimeCreated: 2026-08-26 12:25:14
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4688
+Level: Information
+Computer: DC01.corp.local
+A new process has been created.
+    Subject User: svc_sql / CORP
+    New Process Name: C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE
+    Parent Process Name: C:\Windows\System32\services.exe
+    Command Line: C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE
+----------------------------------------------------------------------------------------------------
+
+Event 221
+TimeCreated: 2026-08-26 12:26:26
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4634
+Level: Information
+Computer: WS-FIN02.corp.local
+An account was logged off.
+    Account Name: alice, Account Domain: CORP
+    Logon Type: 3
+    Client Address: 10.10.20.16
+----------------------------------------------------------------------------------------------------
+
+Event 222
+TimeCreated: 2026-08-26 12:28:01
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: bob, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 3
+    Authentication Package: NTLM
+    Workstation Name: FILE01
+    Source Network Address: 10.10.20.15
+----------------------------------------------------------------------------------------------------
+
+Event 223
+TimeCreated: 2026-08-26 12:28:37
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: FILE01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: FILE01$
+    Logon Type: 3
+    New Logon: Account Name: charlie, Account Domain: CORP
+    Authentication Package: NTLM
+    Workstation Name: FILE01
+    Source Network Address: 10.10.20.15
+----------------------------------------------------------------------------------------------------
+
+Event 224
+TimeCreated: 2026-08-26 12:29:42
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4688
+Level: Information
+Computer: WS-IT03.corp.local
+A new process has been created.
+    Subject User: svc_backup / CORP
+    New Process Name: C:\Windows\System32\conhost.exe
+    Parent Process Name: C:\Windows\System32\services.exe
+    Command Line: C:\Windows\System32\conhost.exe
+----------------------------------------------------------------------------------------------------
+
+Event 225
+TimeCreated: 2026-08-26 12:31:13
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: WS-FIN02.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: WS-FIN02$
+    Logon Type: 2
+    New Logon: Account Name: svc_backup, Account Domain: CORP
+    Authentication Package: Kerberos
+    Workstation Name: WS-FIN02
+    Source Network Address: 10.10.30.20
+----------------------------------------------------------------------------------------------------
+
+Event 226
+TimeCreated: 2026-08-26 12:32:28
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: FILE01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: FILE01$
+    Logon Type: 3
+    New Logon: Account Name: alice, Account Domain: CORP
+    Authentication Package: NTLM
+    Workstation Name: FILE01
+    Source Network Address: 10.10.20.16
+----------------------------------------------------------------------------------------------------
+
+Event 227
+TimeCreated: 2026-08-26 12:34:09
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: WS-IT03.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: WS-IT03$
+    Logon Type: 3
+    New Logon: Account Name: svc_backup, Account Domain: CORP
+    Authentication Package: NTLM
+    Workstation Name: WS-IT03
+    Source Network Address: 10.10.20.15
+----------------------------------------------------------------------------------------------------
+
+Event 228
+TimeCreated: 2026-08-26 12:35:18
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4688
+Level: Information
+Computer: WS-IT03.corp.local
+A new process has been created.
+    Subject User: svc_sql / CORP
+    New Process Name: C:\Windows\System32\svchost.exe
+    Parent Process Name: C:\Windows\System32\services.exe
+    Command Line: C:\Windows\System32\svchost.exe
+----------------------------------------------------------------------------------------------------
+
+Event 229
+TimeCreated: 2026-08-26 12:36:17
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4688
+Level: Information
+Computer: FILE01.corp.local
+A new process has been created.
+    Subject User: svc_backup / CORP
+    New Process Name: C:\Windows\System32\svchost.exe
+    Parent Process Name: C:\Windows\System32\services.exe
+    Command Line: C:\Windows\System32\svchost.exe
+----------------------------------------------------------------------------------------------------
+
+Event 230
+TimeCreated: 2026-08-26 12:37:24
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4634
+Level: Information
+Computer: DC01.corp.local
+An account was logged off.
+    Account Name: bob, Account Domain: CORP
+    Logon Type: 3
+    Client Address: 10.10.20.22
+----------------------------------------------------------------------------------------------------
+
+Event 231
+TimeCreated: 2026-08-26 12:37:46
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: WS-IT03.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: WS-IT03$
+    Logon Type: 3
+    New Logon: Account Name: bob, Account Domain: CORP
+    Authentication Package: NTLM
+    Workstation Name: WS-IT03
+    Source Network Address: 10.10.20.22
+----------------------------------------------------------------------------------------------------
+
+Event 232
+TimeCreated: 2026-08-26 12:38:56
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: DC01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: DC01$
+    Logon Type: 2
+    New Logon: Account Name: bob, Account Domain: CORP
+    Authentication Package: Kerberos
+    Workstation Name: DC01
+    Source Network Address: 10.10.20.22
+----------------------------------------------------------------------------------------------------
+
+Event 233
+TimeCreated: 2026-08-26 12:39:39
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4634
+Level: Information
+Computer: FILE01.corp.local
+An account was logged off.
+    Account Name: svc_backup, Account Domain: CORP
+    Logon Type: 3
+    Client Address: 10.10.30.20
+----------------------------------------------------------------------------------------------------
+
+Event 234
+TimeCreated: 2026-08-26 12:40:56
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: WS-FIN02.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: WS-FIN02$
+    Logon Type: 3
+    New Logon: Account Name: svc_sql, Account Domain: CORP
+    Authentication Package: NTLM
+    Workstation Name: WS-FIN02
+    Source Network Address: 10.10.20.16
+----------------------------------------------------------------------------------------------------
+
+Event 235
+TimeCreated: 2026-08-26 12:41:25
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4688
+Level: Information
+Computer: WS-HR01.corp.local
+A new process has been created.
+    Subject User: alice / CORP
+    New Process Name: C:\Windows\System32\conhost.exe
+    Parent Process Name: C:\Windows\System32\services.exe
+    Command Line: C:\Windows\System32\conhost.exe
+----------------------------------------------------------------------------------------------------
+
+Event 236
+TimeCreated: 2026-08-26 13:20:13
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: Administrator, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 237
+TimeCreated: 2026-08-26 13:20:31
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: Administrator, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 238
+TimeCreated: 2026-08-26 13:20:41
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: svc_backup, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 239
+TimeCreated: 2026-08-26 13:20:54
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: Administrator, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 240
+TimeCreated: 2026-08-26 13:21:07
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: svc_backup, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 241
+TimeCreated: 2026-08-26 13:21:21
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: svc_backup, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 242
+TimeCreated: 2026-08-26 13:21:34
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: Administrator, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 243
+TimeCreated: 2026-08-26 13:21:40
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: Administrator, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 244
+TimeCreated: 2026-08-26 13:21:58
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: Administrator, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 245
+TimeCreated: 2026-08-26 13:22:06
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: Administrator, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 246
+TimeCreated: 2026-08-26 13:22:15
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: Administrator, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 247
+TimeCreated: 2026-08-26 13:22:32
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: Administrator, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 248
+TimeCreated: 2026-08-26 13:22:46
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: backup.admin, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 249
+TimeCreated: 2026-08-26 13:23:03
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: Administrator, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 250
+TimeCreated: 2026-08-26 13:23:15
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: Administrator, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 251
+TimeCreated: 2026-08-26 13:23:20
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: Administrator, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 252
+TimeCreated: 2026-08-26 13:23:30
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: Administrator, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 253
+TimeCreated: 2026-08-26 13:23:46
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: Administrator, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 254
+TimeCreated: 2026-08-26 13:24:00
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: svc_backup, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 255
+TimeCreated: 2026-08-26 13:24:15
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: svc_backup, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 256
+TimeCreated: 2026-08-26 13:24:33
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: Administrator, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 257
+TimeCreated: 2026-08-26 13:24:45
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: backup.admin, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 258
+TimeCreated: 2026-08-26 13:24:52
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: svc_backup, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 259
+TimeCreated: 2026-08-26 13:25:03
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: Administrator, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 260
+TimeCreated: 2026-08-26 13:25:08
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: backup.admin, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 261
+TimeCreated: 2026-08-26 13:25:26
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: Administrator, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 262
+TimeCreated: 2026-08-26 13:25:34
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: Administrator, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 263
+TimeCreated: 2026-08-26 13:25:47
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: svc_backup, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 264
+TimeCreated: 2026-08-26 13:26:00
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: Administrator, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 265
+TimeCreated: 2026-08-26 13:26:18
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: svc_backup, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 266
+TimeCreated: 2026-08-26 13:26:30
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: svc_backup, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 267
+TimeCreated: 2026-08-26 13:26:47
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: Administrator, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 268
+TimeCreated: 2026-08-26 13:26:55
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: Administrator, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 269
+TimeCreated: 2026-08-26 13:27:07
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: Administrator, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 270
+TimeCreated: 2026-08-26 13:27:24
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: Administrator, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 271
+TimeCreated: 2026-08-26 13:27:31
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: Administrator, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 272
+TimeCreated: 2026-08-26 13:27:40
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: Administrator, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 273
+TimeCreated: 2026-08-26 13:27:48
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: Administrator, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 274
+TimeCreated: 2026-08-26 13:27:55
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: Administrator, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 275
+TimeCreated: 2026-08-26 13:28:13
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: Administrator, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 276
+TimeCreated: 2026-08-26 13:28:21
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: Administrator, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 277
+TimeCreated: 2026-08-26 13:28:28
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: backup.admin, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 278
+TimeCreated: 2026-08-26 13:28:35
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: svc_backup, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 279
+TimeCreated: 2026-08-26 13:28:44
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: Administrator, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 280
+TimeCreated: 2026-08-26 13:28:54
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: Administrator, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 281
+TimeCreated: 2026-08-26 13:29:11
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: backup.admin, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 282
+TimeCreated: 2026-08-26 13:29:27
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: Administrator, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 283
+TimeCreated: 2026-08-26 13:29:34
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: backup.admin, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 284
+TimeCreated: 2026-08-26 13:29:48
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: Administrator, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 285
+TimeCreated: 2026-08-26 13:29:59
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: svc_backup, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 286
+TimeCreated: 2026-08-26 13:30:17
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: Administrator, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 287
+TimeCreated: 2026-08-26 13:30:30
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: Administrator, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 288
+TimeCreated: 2026-08-26 13:30:42
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: Administrator, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 289
+TimeCreated: 2026-08-26 13:30:47
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: Administrator, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 290
+TimeCreated: 2026-08-26 13:31:04
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: Administrator, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 291
+TimeCreated: 2026-08-26 13:31:17
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: Administrator, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 292
+TimeCreated: 2026-08-26 13:31:23
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: Administrator, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 293
+TimeCreated: 2026-08-26 13:31:41
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: Administrator, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 294
+TimeCreated: 2026-08-26 13:31:49
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: Administrator, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 295
+TimeCreated: 2026-08-26 13:32:00
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: svc_backup, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 296
+TimeCreated: 2026-08-26 13:32:14
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: backup.admin, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 297
+TimeCreated: 2026-08-26 13:32:32
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4625
+Level: Warning
+Computer: FILE01.corp.local
+An account failed to log on.
+    Account Name: backup.admin, Account Domain: CORP
+    Failure Reason: Unknown user name or bad password.
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+    Logon Type: 10
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 298
+TimeCreated: 2026-08-26 13:33:07
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4624
+Level: Information
+Computer: FILE01.corp.local
+An account was successfully logged on.
+    Subject: Security ID: S-1-5-18, Account Name: FILE01$
+    Logon Type: 10
+    New Logon: Account Name: Administrator, Account Domain: CORP
+    Authentication Package: Negotiate
+    Workstation Name: FINANCE-PC
+    Source Network Address: 10.10.50.23
+----------------------------------------------------------------------------------------------------
+
+Event 299
+TimeCreated: 2026-08-26 13:33:15
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4672
+Level: Information
+Computer: FILE01.corp.local
+Special privileges assigned to new logon.
+    Account Name: Administrator, Account Domain: CORP
+    Privileges: SeSecurityPrivilege, SeTakeOwnershipPrivilege, SeBackupPrivilege, SeRestorePrivilege, SeDebugPrivilege
+----------------------------------------------------------------------------------------------------
+
+Event 300
+TimeCreated: 2026-08-26 13:33:27
+Provider: Microsoft-Windows-Security-Auditing
+EventID: 4688
+Level: Information
+Computer: FILE01.corp.local
+A new process has been created.
+    Subject User: Administrator / CORP
+    New Process Name: C:\Windows\System32\cmd.exe
+    Parent Process Name: C:\Windows\System32\cmd.exe
+    Command Line: cmd.exe /c whoami
+----------------------------------------------------------------------------------------------------
+
